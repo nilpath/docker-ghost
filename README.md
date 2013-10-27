@@ -1,5 +1,5 @@
 #nilpath/ghost
-My setup for running [Ghost](http://ghost.org) in a Docker container. Inspired by Orchardups version, [docker-ghost](https://github.com/orchardup/docker-ghost). Get it at `$ docker pull nilpath/ghost` or clone this repo and build the docker image yourself.
+My setup for running [Ghost](http://ghost.org) in a Docker container. Inspired by Orchardups version, [docker-ghost](https://github.com/orchardup/docker-ghost). Get it at `$ docker pull nilpath/ghost` or clone this repo and build the docker image yourself. Then run it with docker like below
 
     $ docker run -d -e GHOST_URL=http://your-ghost-domain.com nilpath/ghost
 
