@@ -15,10 +15,10 @@ RUN apt-get update -y
 RUN apt-get install -y nodejs unzip
 
 # Add Ghost zip to image
-ADD ./ghost-0.3.3.zip /tmp/
+ADD ./ghost-0.4.2.zip /tmp/
 
 # Unzip Ghost zip to /data/ghost
-RUN unzip -uo /tmp/ghost-0.3.3.zip -d /opt/ghost
+RUN unzip -uo /tmp/ghost-0.4.2.zip -d /opt/ghost
 
 # Install Ghost with NPM
 RUN cd /opt/ghost/ && npm install --production
