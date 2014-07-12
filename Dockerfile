@@ -3,6 +3,7 @@ FROM ubuntu:12.10
 # Volumes
 RUN mkdir /data
 VOLUME ["/data"]
+VOLUME ["/opt/ghost/content/images"]
 
 #install dependencies
 RUN apt-get install -y python g++ make software-properties-common
@@ -36,4 +37,3 @@ ENV NODE_ENV production
 RUN pwd
 RUN echo $NODE_ENV
 ENTRYPOINT ["/usr/bin/npm","start"]
-
